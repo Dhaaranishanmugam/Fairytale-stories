@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FairytalePage</title>
+    <style>
+        /* Reset default margin and padding for all elements */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    display: flex; /* Use flexbox for layout */
+    min-height: 100vh; /* Minimum height of viewport */
+    flex-direction: column; /* Stack children vertically */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /*background-color: #fff; /* White background */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav h1 {
+    color: #6a5acd; /* Purple text color */
+    font-size: 30px;
+    margin: 0; /* Remove margin */
+}
+
+nav button {
+    background-color: #6a5acd; /* Purple button background */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content {
+    flex: 1; /* Take remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #483d8b; /* Dark purple text */
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr); /* Responsive grid layout */
+    gap: 20px;
+    /*width: 100%; /* Full width */
+    /*justify-items: center; /* Center items horizontally */
+}
+
+.story-grid a {
+    text-decoration: none;
+    color: #6a5acd; /* Purple text */
+    background-color: #e6e6fa; /* Light purple background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.story-grid a:hover {
+    background-color: #dcdcdc; /* Darker background on hover */
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>The 10 Fairy Tales!</h1>
+        <div>
+            <button type="button" onclick="location.href='http://127.0.0.1:5500/HTML/HTML%20HW/fairytalestories.html';">Home</button>
+            <button type="button" onclick="location.href='http://127.0.0.1:5500/HTML/HTML%20HW/fairytales.html';">Fairytales</button>
+            <!--<button type="button" onclick="location.href='';">Books</button>-->
+            <button type="button" onclick="location.href='http://127.0.0.1:5500/HTML/HTML%20HW/contactuspage.html';">Contact Us</button>
+        </div>
+        
+    </nav>
+
+    <div class="content">
+        <h2>Fairytale Stories</h2>
+        <br>
+        <p>Choose a story to start your magical journey:</p>
+        <br>
+        <br>
+        <div class="story-grid">
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/cinderella.html">Cinderella</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/sleepingbeauty.html">Sleeping Beauty</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/beautyandthebeast.html">Beauty and the Beast</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/snowwhite.html">Snow White and the Seven Dwarfs</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/pushinboots.html">Puss in Boots</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/thefrogprince.html">The Frog Prince</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/theantandthegrasshopper.html">The Ant and The Grasshopper</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/thethreelittlepigs.html">The Three Little Pigs</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/rapunzel.html">Rapunzel</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/theelvesandtheshoemaker.html">The Elves and the Shoemaker</a>
+        </div>
+    </div>
+</body>
+</html>
